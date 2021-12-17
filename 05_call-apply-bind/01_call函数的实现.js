@@ -5,7 +5,9 @@ Function.prototype.wjcall = function (thisArg, ...args) {
     // console.log(...args); // 数组可以这样，对象不行
 
     // 对 thisArg 转为对象类型（防止传入的是非对象类型）
-    thisArg = (thisArg !== null && thisArg !== undefined) ? Object(thisArg) : window
+    // thisArg = (thisArg !== null && thisArg !== undefined) ? Object(thisArg) : window
+    thisArg = thisArg ?? window
+    thisArg = Object(thisArg)
 
     // 调用需要被执行的函数
     thisArg.fn = fn
