@@ -22,6 +22,7 @@ function createObject2(o) {
 var res1 = createObject2(obj)
 // console.log(res1.__proto__);
 
-var obj2 = Object.create(obj)
+// 创建出来新的对象（obj2），新的对象的原型是指向 obj 的
+var obj2 = Object.create(obj) // 可以改变原型对象(隐式原型)， obj2 的原型对象就指向了 obj
 console.log(obj2);
 console.log(obj2.__proto__);
