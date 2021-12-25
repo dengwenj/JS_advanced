@@ -16,6 +16,7 @@ console.log(map2.size);
 
 map2.set({ name: 'xd' }, 'xdddd')
 // console.log(map2);
+console.log(map2.get(obj1));
 map2.delete(obj1)
 console.log(map2);
 console.log(map2.has(obj2)); // true
