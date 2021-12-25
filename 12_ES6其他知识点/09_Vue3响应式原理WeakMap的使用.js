@@ -26,7 +26,7 @@ function obj2NameFn1() {
 }
 
 // 1 创建 WeakMap
-const weakMap = new WeakMap() // 这里用 WeakMap 对象是弱引用
+const weakMap = new WeakMap() // 这里用 WeakMap 对象是弱引用, 其他不用了 赋值为 null 了，这里也要销毁的 
 
 // 2 收集依赖数据
 const map1 = new Map()
@@ -43,8 +43,3 @@ obj1.name = 'xd'
 const wM = weakMap.get(obj1) // map1
 const m = wM.get('name')
 m.forEach(item => item())
-
-
-
-
-
