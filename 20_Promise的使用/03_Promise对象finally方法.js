@@ -9,3 +9,6 @@ p.then((res) => {
 }).finally(() => {
   console.log('无论执行 then 还是 catch 之后都会执行这个回调');
 })
+
+// Promise 有哪些对象方法
+console.log(Object.getOwnPropertyDescriptors(Promise.prototype));
