@@ -4,13 +4,18 @@
 const a = [1, 2, 3]
 // iterableObj 是一个可迭代对象
 const iterableObj = {
-  names: ['dwj', 'zww', 'lilei'],
+  names: {
+    name: 'dwj',
+    age: 21,
+    sex: '男'
+  },
   [Symbol.iterator]: function() {
     let index = 0
+    const arr = Object.keys(this.names)
     return {
       next: () => {
-        if (index < this.names.length) {
-          return { done: false, value: this.names[index++] }
+        if (index < arr.length) {
+          return { done: false, value: this.names[arr[index++]] }
         } else {
           return { done: true, value: undefined }
         }
@@ -39,3 +44,14 @@ const [q, w, e ] = iterableObj
 console.log(q, w, e);
 
 // 对象的解构也不是用的可迭代对象
+
+console.log(iterableObj,11);
+
+// 对象拿到长度可以用 Object.keys() 
+//  或者 hasOwnProperty 看返回是 true 还是 false
+// var count=0;
+// for(var i in obj){
+//     if(obj.hasOwnProperty(i)){
+//     count++;
+//  }
+// }
