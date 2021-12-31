@@ -1,2 +1,2 @@
-# JS_advanced
-JavaScript 高级
+# JavaScript 高级
+深入理解 JavaScript
