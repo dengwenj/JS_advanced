@@ -14,3 +14,7 @@
 // 第三种 全部导出
 export * from './num.js'
 export * from './string.js'
+
+export default function () {
+  console.log('默认导出只能有一个');
+}
