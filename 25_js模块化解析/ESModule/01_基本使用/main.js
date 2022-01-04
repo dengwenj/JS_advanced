@@ -7,6 +7,7 @@
 
 // 导入方式3: 将导出的所有内容放到一个标识符中
 import * as foo from './foo.js'
+console.log(foo); // Module {Symbol(Symbol.toStringTag): 'Module'}
 
 // console.log(name);
 // console.log(age);
