@@ -16,6 +16,10 @@ const age = 21
 function foo() {}
 class Person {}
 
+export default function g() {
+
+}
+
 // 这不是对象，这是一种语法，不能写键值对，统一导出
 export {
   name,

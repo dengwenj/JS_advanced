@@ -6,9 +6,9 @@
 // import { name as name1,  age as age1, foo as foo1, Person as Person1} from './foo.js'
 
 // 导入方式3: 将导出的所有内容放到一个标识符中
-import * as foo from './foo.js'
+import g, * as foo from './foo.js'
 console.log(foo); // Module {Symbol(Symbol.toStringTag): 'Module'}
-
+console.log(g);
 // console.log(name);
 // console.log(age);
 
