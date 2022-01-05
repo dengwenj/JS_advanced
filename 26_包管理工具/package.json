@@ -4,6 +4,7 @@
   "description": "测试package.json",
   "main": "src/main.js",
   "scripts": {
+    "dwj": "node ./src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "dengnwenjie",
