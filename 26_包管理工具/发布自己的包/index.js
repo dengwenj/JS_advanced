@@ -6,9 +6,15 @@ function sub(num1, num2) {
   return num1 - num2
 }
 
+function peorsn(name, age) {
+  this.name = name
+  this.age = age
+}
+
 module.exports = {
   add,
-  sub
+  sub,
+  peorsn
 }
 
 // npm login

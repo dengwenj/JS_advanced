@@ -1,6 +1,6 @@
 {
   "name": "dwj_test_utils",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "a test utils",
   "main": "index.js",
   "scripts": {

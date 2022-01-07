@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dwj_test_utils": "^1.0.0"
+    "dwj_test_utils": "^1.1.0"
   }
 }

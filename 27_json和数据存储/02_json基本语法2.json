@@ -1,0 +1,9 @@
+{
+  "name": "dengwenjie",
+  "age": 21,
+  "sex": null,
+  "friend": {
+    "name": "zww"
+  },
+  "hobby": ["吃饭", "睡觉"]
+}
