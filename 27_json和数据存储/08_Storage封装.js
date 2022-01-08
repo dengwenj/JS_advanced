@@ -26,11 +26,11 @@ class DWJCache {
   }
 
   key(index) {
-    return this.storage.key(index)
+    return this.storage.key(index) // 是获取的 key 值，传的是索引，可以和 length， for循环使用
   }
 
   length() {
-    return this.storage.length 
+    return this.storage.length // 这个长度就是有多少个
   }
 }
 
