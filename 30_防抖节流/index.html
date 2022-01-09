@@ -12,11 +12,8 @@
   <input type="text">
   <button>取消</button>
 
-  <!-- <script src="./01_debounce防抖基本使用.js"></script> -->
-  <!-- <script src="./02_debounce是否立即执行.js"></script> -->
-  <!-- <script src="./03_debounce取消函数执行.js"></script> -->
-  <!-- <script src="./04_debounce函数的返回值.js"></script> -->
-  <script src="./05_节流函数基本使用.js"></script>
+  <!-- <script src="./05_节流函数基本使用.js"></script> -->
+  <script src="./06_节流函数是否第一次触发.js"></script>
   <script>
     const inputEl = document.querySelector('input')
     const btnEl = document.querySelector('button')
@@ -27,7 +24,7 @@
       console.log(`发送了${++count}次网络请求`, this, e);
     }
 
-    inputEl.oninput = throttle(_throttle, 2000)
+    inputEl.oninput = throttle(_throttle, 2000, { leading: false })
   </script>
 </body>
 
