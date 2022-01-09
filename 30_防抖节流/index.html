@@ -11,7 +11,8 @@
 <body>
   <input type="text">
 
-  <script src="./01_debounce防抖基本使用.js"></script>
+  <!-- <script src="./01_debounce防抖基本使用.js"></script> -->
+  <script src="./02_debounce是否立即执行.js"></script>
   <script>
     const inputEl = document.querySelector('input')
 
@@ -20,7 +21,7 @@
       console.log(`第${++count}次发送网络请求`);
       console.log(this);
       console.log(e);
-    }, 2000)
+    }, 2000, true)
   </script>
 </body>
 
