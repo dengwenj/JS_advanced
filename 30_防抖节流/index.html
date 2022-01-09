@@ -15,33 +15,19 @@
   <!-- <script src="./01_debounce防抖基本使用.js"></script> -->
   <!-- <script src="./02_debounce是否立即执行.js"></script> -->
   <!-- <script src="./03_debounce取消函数执行.js"></script> -->
-  <script src="./04_debounce函数的返回值.js"></script>
+  <!-- <script src="./04_debounce函数的返回值.js"></script> -->
+  <script src="./05_节流函数基本使用.js"></script>
   <script>
     const inputEl = document.querySelector('input')
     const btnEl = document.querySelector('button')
 
-    const _debounce = debounce(function (e) {
-      console.log(`第${++count}次发送网络请求`, this, e)
-
-      return '函数的返回值,执行的是这个函数'
-    }, 2000, true, (res) => {
-      console.log('拿到函数的返回值：', res);
-    })
-
-    const callback = () => {
-      _debounce().then((res) => {
-        console.log(res);
-      })
-    }
-
-    const debounceChange = callback
-
     let count = 0
-    inputEl.oninput = debounceChange
 
-    btnEl.onclick = function () {
-      debounceChange.cancel()
+    const _throttle = (e) => {
+      console.log(`发送了${++count}次网络请求`, this, e);
     }
+
+    inputEl.oninput = throttle(_throttle, 2000)
   </script>
 </body>
 
