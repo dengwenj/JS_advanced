@@ -24,7 +24,7 @@
       console.log(`发送了${++count}次网络请求`, this, e);
     }
 
-    inputEl.oninput = throttle(_throttle, 2000, { leading: false })
+    inputEl.oninput = throttle(_throttle, 2000, { leading: true })
   </script>
 </body>
 
