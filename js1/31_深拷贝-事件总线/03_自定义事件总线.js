@@ -34,4 +34,3 @@ eventBus.on('dwj', function (num, str) {
 
 eventBus.emit('dwj', 123, 'zww')
 eventBus.emit('dwj', 123333333333, 'zww')
-
