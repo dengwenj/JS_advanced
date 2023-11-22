@@ -25,4 +25,4 @@ function bar() {
   console.log(age)
 }
 bar()
-// 打印 男 23 await
+// 打印 -> 男 23 await
