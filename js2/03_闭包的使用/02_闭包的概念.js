@@ -20,3 +20,5 @@ function foo() {
 
 var fn = foo()
 fn()
+
+// fn = null
