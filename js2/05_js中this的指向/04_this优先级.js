@@ -29,4 +29,5 @@ var f = fn.bind(null)
 /**
  * 箭头函数不会绑定 this、arguments 属性
  * 箭头函数不能作为构造函数来使用(不能和 new 一起来使用,会抛出错误)
+ * 箭头函数的 this 会找他上层作用域的 this
  */
