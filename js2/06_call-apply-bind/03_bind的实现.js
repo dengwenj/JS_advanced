@@ -1,15 +1,16 @@
 Function.prototype.myBind = function (thisArg, ...args) {
   // 保存调用的函数
-  const fn = this
-
-  thisArg = thisArg ?? window
-  thisArg = Object(thisArg)
-  thisArg.fn = fn
+  let fn = this
 
   return function (...arg1s) {
+    thisArg = thisArg ?? window
+    thisArg = Object(thisArg)
+    thisArg.fn = fn
+
     const res = thisArg.fn(...[...args, ...arg1s])
 
     delete thisArg.fn
+    fn = null
     return res
   }
 }
