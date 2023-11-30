@@ -46,3 +46,5 @@ obj.pumu()
 console.log(obj instanceof Sub); // true
 console.log(obj instanceof Person); // true
 console.log(obj instanceof Object); // true
+
+console.log(Object.prototype === Function.prototype);
