@@ -39,3 +39,10 @@ console.log(obj)
 obj.running()
 obj.saying()
 obj.pumu()
+
+/**
+ * instanceof 用于检测构造函数的 prototype，是否出现在某个实例对象的原型链上
+ */
+console.log(obj instanceof Sub); // true
+console.log(obj instanceof Person); // true
+console.log(obj instanceof Object); // true
